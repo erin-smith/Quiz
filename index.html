@@ -28,7 +28,7 @@
           <h1>JavaScript Quiz!</h1>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-sm-12">
             <div id="quizCard" class="card hide">
               <h3 class="card-header" id="question-title"></h3>
               <div class="card-body" id="qOutput"></div>
@@ -44,17 +44,17 @@
                   <p class="ans" id="ch4"></p>
                 </div>
               </div>
-              <button type="button" class="btn btn-info" id="next-btn">Next Question</button>
+              <button type="button" class="btn btn-lg" id="next-btn">Next Question</button>
               <div id="result" class= "result hide"></div>
             </div>
             <div class="card-footer hide" id="footer">
               <h3 class="clock">Time Remaining: &nbsp;<span id="time"></span></h3>
               <div id="end-screen" class="hide">
-                <h2>All done!</h2>
-                <p>Your final score is: <span id="final-score"></span>.</p>
+                <h3>All Done!</h3>
+                <p class="end">Your final score is: <span id="final-score"></span>.</p>
                 <p>
-                  Enter initials: <input type="text" id="initials" max="3" />
-                  <button id="submit">Submit</button>
+                  Enter your initials: <input type="text" id="initials" max="3" />
+                  <button id="submit" class="btn btn-md">Submit</button>
                 </p>
               </div>
             </div>

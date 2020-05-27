@@ -15,6 +15,10 @@ a {
     font-size: 20px;
 
 }
+#next-btn {
+    background-color: #343a40;
+    color: white;
+}
 .ans{
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
@@ -29,7 +33,7 @@ height: 100vh;
 font-family: 'Roboto Slab', serif;
 justify-content: center;
 align-items: center;
-background-color: slategray;
+background-color: #343a40;
 }
 .jumbotron {
     background-color: cadetblue;
@@ -61,7 +65,7 @@ border-radius: 5px;
 text-align: center;
 }
 #begin-btn:hover {
-    background-color: black;
+    background-color: cadetblue;
     color: white;
 }
 #start-screen {
@@ -118,7 +122,43 @@ text-align: center;
 .clock {
     color: darkmagenta;
     font-size: 25px;
+    font-family: 'Roboto Slab', serif; 
 } 
+.end {
+    color: indianred;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif; 
+    font-weight: bolder;
+}
+#result{
+    text-align: center;
+    font-size: 20px;
+    color: mediumvioletred;
+    font-weight: bolder;
+    margin-left: 60px;
+    font-family: 'Roboto Slab', serif;
+}
+#submit {
+    background-color: goldenrod;
+    color: white;
+}
+#hs{
+    color: darkmagenta;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+#board{
+    background-color: white;
+   margin: 20px;
+}
+#highscores{
+    color: #343a40;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    font-size: 16px;
+
+}
 
 @media screen and (min-width: 768px) {
 

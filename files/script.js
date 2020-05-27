@@ -120,11 +120,11 @@ function answerClick ()
 
         // play "wrong" sound effect
         //sfxWrong.play();
-        resultInfo.textContent = "Wrong!";
+        resultInfo.textContent = "NOPE!";
     } else {
         // play "right" sound effect
         //sfxRight.play();
-        resultInfo.textContent = "Correct!";
+        resultInfo.textContent = "CORRECT!";
         score +=20;
     }
 
