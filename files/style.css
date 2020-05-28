@@ -5,14 +5,15 @@
 a {
     color:white;
     position:absolute;
-    left:2%;
-    top:2%;
-    font-size: 25px;
+    left:1%;
+    top:1%;
+    font-size: 20px;
+    text-decoration: underline;
 }
 #qOutput{
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 #next-btn {
@@ -37,28 +38,28 @@ background-color: #343a40;
 }
 .jumbotron {
     background-color: cadetblue;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-bottom: 15px;
     color: white;
     text-align: center;
 }
 .container {
-    width: 800px;
-    max-width: 80%;
+    max-width: 90%;
+    max-height: 68%;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
 }
 #begin-btn {
 position: absolute;
-top: 25%;
+top: 22%;
 left: 50%;
 transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 font-size: 20px;
-padding: 16px 10px;
+padding: 16px 8px;
 border: none;
 cursor: pointer;
 border-radius: 5px;
