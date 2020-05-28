@@ -12,7 +12,9 @@ var submitBtn = document.getElementById("submit");
 var initialsEl = document.getElementById("initials");
 var ltrBtn = document.getElementsByClassName("pick");
 
-
+var mp3Yes = new Audio("files/luigi.mp3");
+var mp3Nope = new Audio("files/nope.mp3");
+var mp3end = new Audio("files/muppet.mp3");
 
 function startQuiz ()
 {
@@ -118,12 +120,12 @@ function answerClick ()
         // display new time on page
         clock.textContent = time;
 
-        // play "wrong" sound effect
-        //sfxWrong.play();
+        //play "wrong" sound effect
+        mp3Nope.play();
         resultInfo.textContent = "NOPE!";
     } else {
         // play "right" sound effect
-        //sfxRight.play();
+        mp3Yes.play();
         resultInfo.textContent = "CORRECT!";
         score +=20;
     }
@@ -153,6 +155,7 @@ function quizEnd ()
 
     // hide questions section
     qCard.setAttribute("class", "hide");
+    mp3end.play();
 }
 
 function clockTick ()
