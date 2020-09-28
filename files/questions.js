@@ -10,7 +10,7 @@ var questions = [
  {
     question: "Which is NOT a 'recommended practice' when using JavaScript?",
     choices: ["Ending statements with semi-colons", "closing '{' and '(', or braces and parentheses",
-    "the use of strict mode ","Always using '+' instead of 'concat'"],
+    "the use of strict mode ","Always using concat instead of + or +="],
     answer: 3
 }, {
     question: "Which function adds an element at the begining of an array?",
