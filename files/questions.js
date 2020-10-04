@@ -37,14 +37,14 @@ var questions = [
     answer: 2
 }, {
 	question: "Which is NOT an object?",
-    choices: ["undefined","Array", "RegExp", "null"],
+    choices: ["undefined","Array", "RegExp", "a function"],
     answer: 0
 },{
 	question: "Which is NOT a type of loop used in JavaScript?",
     choices: ["for", "for/in", "while", "for/ a while"],
     answer: 3
 },{
-	question: "What will the code below output to the console? console.log(1 +  +'2' + '2');",
+	question: "What will the code below output to the console? console.log( 1 +  +'2' + '2' );",
     choices: ["32", "122", "14","5"],
     answer: 0
 }
