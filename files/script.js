@@ -1,11 +1,11 @@
-const timer;
+let timer;
 let time = questions.length * 15;
-const scoreBoard = document.getElementById("ScoreBoard");
+let scoreBoard = document.getElementById("ScoreBoard");
 let qIndex = 0;
 let score = 0;
-const choicesEl = document.getElementsByClassName("ans");
-const clock = document.getElementById("time");
-const beginButton = document.getElementById("begin-btn");
+let choicesEl = document.getElementsByClassName("ans");
+let clock = document.getElementById("time");
+let beginButton = document.getElementById("begin-btn");
 const qCard = document.getElementById("quizCard");
 const resultInfo = document.getElementById("result");
 const submitBtn = document.getElementById("submit");
