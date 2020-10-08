@@ -1,30 +1,30 @@
-var timer;
-var time = questions.length * 15;
-var scoreBoard = document.getElementById("ScoreBoard");
-var qIndex = 0;
-var score = 0;
-var choicesEl = document.getElementsByClassName("ans");
-var clock = document.getElementById("time");
-var beginButton = document.getElementById("begin-btn");
-var qCard = document.getElementById("quizCard");
-var resultInfo = document.getElementById("result");
-var submitBtn = document.getElementById("submit");
-var initialsEl = document.getElementById("initials");
-var ltrBtn = document.getElementsByClassName("pick");
+const timer;
+let time = questions.length * 15;
+const scoreBoard = document.getElementById("ScoreBoard");
+let qIndex = 0;
+let score = 0;
+const choicesEl = document.getElementsByClassName("ans");
+const clock = document.getElementById("time");
+const beginButton = document.getElementById("begin-btn");
+const qCard = document.getElementById("quizCard");
+const resultInfo = document.getElementById("result");
+const submitBtn = document.getElementById("submit");
+const initialsEl = document.getElementById("initials");
+const ltrBtn = document.getElementsByClassName("pick");
 
-var mp3Yes = new Audio("files/luigi.mp3");
-var mp3Nope = new Audio("files/nope.mp3");
-var mp3end = new Audio("files/muppet.mp3");
+const mp3Yes = new Audio("files/luigi.mp3");
+const mp3Nope = new Audio("files/nope.mp3");
+const mp3end = new Audio("files/muppet.mp3");
 
 function startQuiz ()
 {
     // hide start screen
-    var startScreenEl = document.getElementById("start-screen");
+    const startScreenEl = document.getElementById("start-screen");
     startScreenEl.setAttribute("class", "hide");
     beginButton.setAttribute("class", "hide");
 
     // un-hide questions section
-    var foot = document.getElementById("footer");
+    const foot = document.getElementById("footer");
     foot.removeAttribute("class", "hide");
     qCard.removeAttribute("class", "hide");
     scoreBoard.removeAttribute("class", "hide");
@@ -34,7 +34,7 @@ function startQuiz ()
 
     // show starting time
     clock.textContent = time;
-    var nextButton = document.getElementById("next-btn");
+    const nextButton = document.getElementById("next-btn");
     nextButton.onclick = onNextBtnClick;
     showQuestion(qIndex);
     updateQuestionTitle(qIndex);
@@ -73,7 +73,7 @@ function onNextBtnClick(){
 
 function updateQuestionTitle (questionNumber)
 {
-    var title = document.getElementById("question-title");
+    let title = document.getElementById("question-title");
     title.textContent = "Question ";
     title.append(questionNumber + 1 + ":");
 }
@@ -81,10 +81,10 @@ function updateQuestionTitle (questionNumber)
 function showQuestion (questionNumber)
 {
     //get question from array
-    var q = questions[questionNumber];
+    let q = questions[questionNumber];
 
     //update H3 with current question
-    var titleQ = document.getElementById("qOutput");
+    const titleQ = document.getElementById("qOutput");
     titleQ.textContent = questions[questionNumber].question;
 
     // clear out any old question choices
@@ -145,12 +145,12 @@ function quizEnd ()
     clearInterval(timer);
 
     // show end screen
-    var endScreenEl = document.getElementById("end-screen");
+    let endScreenEl = document.getElementById("end-screen");
     endScreenEl.removeAttribute("class");
     clock.removeAttribute("class", "hide");
 
     // show final score
-    var finalScoreEl = document.getElementById("final-score");
+    let finalScoreEl = document.getElementById("final-score");
     finalScoreEl.textContent = score;
 
     // hide questions section
@@ -173,16 +173,16 @@ function clockTick ()
 function saveHighscore ()
 {
     // get value of input box
-    var initials = initialsEl.value.trim();
+    let initials = initialsEl.value.trim();
 
     // make sure value wasn't empty
     if (initials !== "") {
         // get saved scores from localstorage, or if not any, set to empty array
-        var highscores =
+        let highscores =
             JSON.parse(window.localStorage.getItem("highscores")) || [];
 
         // format new score object for current user
-        var newScore = {
+        let newScore = {
             score: score,
             initials: initials
         };
