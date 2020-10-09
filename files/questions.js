@@ -50,7 +50,7 @@ const questions = [{
   answer: 3
 },
 {
-  question: "What will the code below output to the console? console.log( 1 +  +'2' + '2' ) ;",
+  question: "What will the code below output to the console? console.log ( 1 +  +'2' + '2' ) ;",
   choices: ["32", "122", "14", "5"],
   answer: 0
 }];

@@ -7,9 +7,10 @@
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## Description
-  This a timed, multiple-choice JavaScript quiz that I wrote. Simply open the live site and let the fun begin!  Make sure your sound is on. You get 15 seconds to answer each question. The quiz has a countdown timer with time penalties for incorrect answers, utilizes local storage and lets you enter and save your initials for the Highscores/Scoreboard.
+  This a timed, multiple-choice JavaScript quiz that I wrote using ES6 and jQuery elements. Simply open the live site and let the fun begin!  Make sure that your sound is on. You are alloted 15 seconds to answer each question. Hit the "Next Question" button to continue. The quiz has a countdown timer with time penalties for incorrect answers, utilizes local storage and lets you enter and save your initials for the Highscores/Scoreboard.
   
   The quiz app uses many hide and show elements for different screens, event clicks, local storage, hover buttons, functions, loops, conditionals, validations, array and string manipulation methods, Bootstrap, Google fonts, jQuery, timer elements, along with fun sounds! The JavaScript dynamically updates and renders the HTML and CSS. It is mobile-responsive and fun. Enjoy!
+
 
 [Link to project](https://erin-smith.github.io/Quiz/)
 ![Screenshot](./files/codequiz.png)  
@@ -28,7 +29,7 @@
   Open the link and have fun!
   
 ## Usage 
-  This quiz is fun and challenging and I would like to update this as I learn more JavaScript!
+  This quiz is fun and challenging and I would like to update this as I switch between projects!  Possible future DEV ideas include: random question pulls and different decks of question sets, animated card changes without a continue button, sharper images, a pause button for use after you answer and before the next question flips, wrong answer links to explanations for knowledge retention, and multiplayer options with levels for updated and higher level JavaScript up through newer ECMA script editions.  
 
 ## License 
 [![ISClicense](https://img.shields.io/badge/license-ISC-blue.svg)](https://shields.io/)
